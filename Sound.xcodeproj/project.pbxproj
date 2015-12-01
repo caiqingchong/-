@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1887D0EF1BA26D9400EB544C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1887D0EE1BA26D9400EB544C /* AudioToolbox.framework */; };
+		E21B1911171E7FEC001821AE /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E21B1910171E7FEC001821AE /* libmp3lame.a */; };
 		E2C2B26117156219006EF31F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2B26017156219006EF31F /* UIKit.framework */; };
 		E2C2B26317156219006EF31F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2B26217156219006EF31F /* Foundation.framework */; };
 		E2C2B26517156219006EF31F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2B26417156219006EF31F /* CoreGraphics.framework */; };
@@ -16,9 +18,14 @@
 		E2C2B27317156219006EF31F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C2B27217156219006EF31F /* Default.png */; };
 		E2C2B2751715621A006EF31F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C2B2741715621A006EF31F /* Default@2x.png */; };
 		E2C2B2771715621A006EF31F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C2B2761715621A006EF31F /* Default-568h@2x.png */; };
+		E2C2B27F17156238006EF31F /* SoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C2B27E17156238006EF31F /* SoundView.m */; };
+		E2C2B281171562DA006EF31F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2B280171562DA006EF31F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1887D0EE1BA26D9400EB544C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E21B190F171E7FEC001821AE /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		E21B1910171E7FEC001821AE /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		E2C2B25D17156219006EF31F /* Sound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C2B26017156219006EF31F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2C2B26217156219006EF31F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +39,9 @@
 		E2C2B27217156219006EF31F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E2C2B2741715621A006EF31F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E2C2B2761715621A006EF31F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E2C2B27D17156238006EF31F /* SoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundView.h; sourceTree = "<group>"; };
+		E2C2B27E17156238006EF31F /* SoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundView.m; sourceTree = "<group>"; };
+		E2C2B280171562DA006EF31F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,15 +49,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1887D0EF1BA26D9400EB544C /* AudioToolbox.framework in Frameworks */,
+				E2C2B281171562DA006EF31F /* AVFoundation.framework in Frameworks */,
 				E2C2B26117156219006EF31F /* UIKit.framework in Frameworks */,
 				E2C2B26317156219006EF31F /* Foundation.framework in Frameworks */,
 				E2C2B26517156219006EF31F /* CoreGraphics.framework in Frameworks */,
+				E21B1911171E7FEC001821AE /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21B190E171E7FEC001821AE /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				E21B190F171E7FEC001821AE /* lame.h */,
+				E21B1910171E7FEC001821AE /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
 		E2C2B25417156219006EF31F = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +90,8 @@
 		E2C2B25F17156219006EF31F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1887D0EE1BA26D9400EB544C /* AudioToolbox.framework */,
+				E2C2B280171562DA006EF31F /* AVFoundation.framework */,
 				E2C2B26017156219006EF31F /* UIKit.framework */,
 				E2C2B26217156219006EF31F /* Foundation.framework */,
 				E2C2B26417156219006EF31F /* CoreGraphics.framework */,
@@ -78,8 +102,11 @@
 		E2C2B26617156219006EF31F /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				E21B190E171E7FEC001821AE /* lame */,
 				E2C2B26F17156219006EF31F /* AppDelegate.h */,
 				E2C2B27017156219006EF31F /* AppDelegate.m */,
+				E2C2B27D17156238006EF31F /* SoundView.h */,
+				E2C2B27E17156238006EF31F /* SoundView.m */,
 				E2C2B26717156219006EF31F /* Supporting Files */,
 			);
 			path = Sound;
@@ -166,6 +193,7 @@
 			files = (
 				E2C2B26D17156219006EF31F /* main.m in Sources */,
 				E2C2B27117156219006EF31F /* AppDelegate.m in Sources */,
+				E2C2B27F17156238006EF31F /* SoundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +235,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -230,7 +258,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -240,10 +268,22 @@
 		E2C2B27B1715621A006EF31F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7s,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sound/Sound-Prefix.pch";
 				INFOPLIST_FILE = "Sound/Sound-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sound/lame\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -251,10 +291,21 @@
 		E2C2B27C1715621A006EF31F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv7s,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sound/Sound-Prefix.pch";
 				INFOPLIST_FILE = "Sound/Sound-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Sound/lame\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -278,6 +329,7 @@
 				E2C2B27C1715621A006EF31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

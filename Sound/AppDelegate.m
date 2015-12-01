@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SoundView.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    SoundView *sview = [[SoundView alloc] init];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:sview];
+    [sview release];
+//    [self.window addSubview:nv.view];
+    self.window.rootViewController = nv;
     [self.window makeKeyAndVisible];
     return YES;
 }
